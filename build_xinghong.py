@@ -442,7 +442,10 @@ FONT_NOTICE = ('NotoSansSC-OFL',
 # 手工补充的许可正文：PySide6/shiboken6 的 wheel 只带 LicenseRef-Qt-Commercial.txt，
 # 按 LGPL 分发必须随包给全文（LGPLv3 自身又要求同时提供 GPLv3 全文）。
 # 来源与 SHA256 写在 LICENSES/Qt-LGPL-3.0/README.md，构建时原样复制，不在这里手写正文。
-SUPPLEMENT_LICENSE_DIR = ROOT / 'LICENSES' / 'Qt-LGPL-3.0'
+_sup_candidates = [HERE / 'LICENSES' / 'Qt-LGPL-3.0']
+if HERE.parent != HERE:
+    _sup_candidates.append(HERE.parent / 'LICENSES' / 'Qt-LGPL-3.0')
+SUPPLEMENT_LICENSE_DIR = next((p for p in _sup_candidates if p.is_dir()), _sup_candidates[0])
 SUPPLEMENT_LICENSE_FILES = ('LGPL-3.0.txt', 'GPL-3.0.txt')
 PROJECT_LICENSE = ROOT / 'LICENSE'
 
