@@ -1,0 +1,4 @@
+{
+ "_schema": "site = '<basename>:<lineno>'（_err() 调用点行号，随代码移动需同步）。entries[site] = {reason, first_seen}。errs 命令：未登记 = fail。",
+ "entries": {}
+}

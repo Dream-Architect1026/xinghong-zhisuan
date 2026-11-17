@@ -1,0 +1,35 @@
+# 构建产物
+build/
+dist/
+installer/out/
+*.exe
+*.zip
+
+# 日志（含看护脚本运行日志）
+*.log
+logs/
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# 本地运行数据与数据库
+data/
+*.db
+*.db-journal
+*.jsonl
+
+# 含凭据的本机配置（不入库，分发版不携带）
+paths.json
+*.local.json
+secrets.json
+
+# 临时/备份
+*.tmp
+*.bak
+*.orig
+~$*

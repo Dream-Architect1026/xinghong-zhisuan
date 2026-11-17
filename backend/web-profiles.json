@@ -1,0 +1,34 @@
+[
+  {
+    "id": "flash64",
+    "label": "Flash-9B Q4 · 256K",
+    "root": "models_flash",
+    "model": "QwenPaw-Flash-9B-heretic-MTP-GGUF\\QwenPaw-Flash-9B-heretic-MTP-Q4_K_M.gguf",
+    "mmproj": "",
+    "alias": "local/flash9b-long",
+    "ctx": 114688,
+    "n": 14336,
+    "ctk": "q4_0",
+    "ctv": "q4_0",
+    "budget": 98304,
+    "reserve": 16384,
+    "block": 128,
+    "threads": 0
+  },
+  {
+    "id": "qwen9bq4",
+    "label": "Qwen3.5-9B Q4 · 256K",
+    "root": "models_dir",
+    "model": "Qwen3.5-9B-GGUF\\Qwen3.5-9B-Q4_K_M.gguf",
+    "mmproj": "",
+    "alias": "local/qwen9b-q4-long",
+    "ctx": 114688,
+    "n": 14336,
+    "ctk": "q4_0",
+    "ctv": "q4_0",
+    "budget": 98304,
+    "reserve": 16384,
+    "block": 128,
+    "threads": 0
+  }
+]
